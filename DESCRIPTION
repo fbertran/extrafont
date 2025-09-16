@@ -16,6 +16,8 @@ Imports:
     grDevices,
     utils,
     Rttf2pt1
+Remotes:
+    Rttf2pt1=github::wch/Rttf2pt1
 Suggests:
     fontcm
 License: GPL-2
