@@ -1,0 +1,94 @@
+extrafont 0.19
+----------------------------------------------------------------
+
+* Fixed #94: the regular expression for finding .pfa and .pfb files was
+  incorrect. (#95)
+
+* Added `/usr/local/share/fonts/` to set of search paths on Linux. (#96)
+
+extrafont 0.18
+----------------------------------------------------------------
+
+* Extrafont now supports .pfa files in addition to .pfb files. (thanks to Paul
+  Murrell)
+
+* `loadfonts()` now has a new default device, `"all"`, which loads fonts for
+  all devices. (Thanks to Jeff Arnold)
+
+* Properly handles the encoding of the path of the executable of Rttf2pt1.
+  (Thanks to Gabriel Magno)
+
+extrafont 0.17
+----------------------------------------------------------------
+
+* Change \donttest{} entries to \dontrun{}.
+
+* Suppress spurious warnings from readLines() in afm_get_info().
+
+* Remove "Character" entry in AFM files because grDevices doesn't understand it.
+  (Thanks to gvfarns)
+
+extrafont 0.16
+----------------------------------------------------------------
+
+* When importing fonts, don't create duplicate entries. (Fixes #31. Thanks to
+  Dylan Schwilk)
+
+extrafont 0.15
+----------------------------------------------------------------
+
+* Fix handling of filenames with spaces in R <= 2.15.2.
+
+extrafont 0.14
+----------------------------------------------------------------
+
+* Workaround for a bug in ghostscript: if the fontmap path includes the string
+  "Resources", it gives an error. Now, in this situation, a temporary symlink
+  is made to the fontmap path. (Thanks to Kohske Takahashi)
+
+* `loadfonts(quiet=TRUE)` no longer displays warning messages.
+
+extrafont 0.13
+----------------------------------------------------------------
+
+* embed_fonts() now can handle filenames with spaces.
+
+* A new function choose_fonts() has been added, which allows the user to
+  specify a set of fonts, and it will return the first one available on the
+  current system. (Thanks to Jeffrey Arnold)
+
+* Imported fonts are now automatically registered when extrafont is attached.
+  (Thanks to Jeffrey Arnold)
+
+extrafont 0.12
+----------------------------------------------------------------
+
+* One of the Linux font search paths has been changed to /usr/share/fonts, so
+  that it works with Arch and Gentoo.
+
+* extrafont now searches in the user font directory, ~/.fonts on Linux
+  and BSD, and ~/Library/Fonts on Mac OS X.
+
+extrafont 0.11
+----------------------------------------------------------------
+
+* extrafont now ignores case when searching for font files.
+
+* All metrics are imported from Truetype fonts. Previously, only the
+  metrics for Latin1 were imported. This fixes problems where hyphens
+  and minus signs were not allocated enough space. (Thanks to Brian
+  Kriegler and Erik Iverson for their investigation of the problem.
+  Fixes #11)
+
+* The AFM (font metrics) files are now gzipped.
+
+extrafont 0.10
+----------------------------------------------------------------
+
+* A default Truetype font search path for FreeBSD has been added.
+  (Thanks to Rainer Hurling)
+
+* extrafont now also makes it easy to use fonts for bitmap output on
+  Windows. Use `loadfonts("win")` to register the fonts in Windows.
+
+* loadfonts() now has a `quiet` option to suppress output.

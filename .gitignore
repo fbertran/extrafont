@@ -1,0 +1,6 @@
+*.sublime-project
+*.sublime-workspace
+testcode/
+.Rproj.user
+.Rhistory
+.RData
