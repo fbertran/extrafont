@@ -1,3 +1,6 @@
+**NOTE: As of 2022-09-23, Frederic Bertrand has taken over maintainership of this package, and this repository is no longer active. The new active repository is at https://github.com/fbertran/extrafont**
+
+
 # extrafont
 
 The extrafont package makes it easier to use fonts other than the basic PostScript fonts that R uses.
