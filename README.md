@@ -1,3 +1,14 @@
+# Foreword
+
+The extrafont R package was created and maintained by [Winston Chang](https://github.com/wch) on [github](https://github.com/wch/extrafont) for more than 13 years with a first commit on github the 17th of May 2012.
+The previous commit history of the package can be found [here](https://github.com/wch/extrafont).
+The responsibilities and attention of Winston Chang are on things quite far away from extrafont and Rttf2pt1 these days. 
+As a consequence he asked for another person to maintain the extrafont package and I ([Frederic Bertrand](https://github.com/fbertran)) volunteered [(read here)](https://github.com/wch/Rttf2pt1/issues/25#issuecomment-3320579566).
+
+The following text is the original readme from Winston Chang repository on [github](https://github.com/wch/extrafont), only some links were updated.
+
+-------------------
+
 # extrafont
 
 The extrafont package makes it easier to use fonts other than the basic PostScript fonts that R uses.
@@ -28,7 +39,7 @@ You must have Ghostscript installed on your system for embedding fonts into PDF 
 Extrafont requires the **[extrafontdb](https://github.com/wch/extrafontdb)** package to be installed.
 extrafontdb contains the font database, while this package contains the code to install fonts and register them in the database.
 
-It also requires the **[Rttf2pt1](https://github.com/wch/Rttf2pt1)** package to be installed.
+It also requires the **[Rttf2pt1](https://github.com/fbertran/Rttf2pt1)** package to be installed.
 Rttf2pt1 contains the ttf2pt1 program which is used to read and manipulate TrueType fonts.
 It is in a separate package for licensing reasons.
 

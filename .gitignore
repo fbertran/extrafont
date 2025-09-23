@@ -4,3 +4,4 @@ testcode/
 .Rproj.user
 .Rhistory
 .RData
+^cran-comments.md*
