@@ -3,4 +3,4 @@
 ^\.Rproj\.user$
 ^\.github$
 ^cran-comments.md*
-\.DS_Store
+\.DS_Store$
