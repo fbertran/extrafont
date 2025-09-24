@@ -22,3 +22,4 @@ src/*.dll
 doc
 inst/doc
 
+.DS_Store
