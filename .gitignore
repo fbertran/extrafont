@@ -1,7 +1,24 @@
-*.sublime-project
-*.sublime-workspace
-testcode/
-.Rproj.user
+# RStudio files
+*.Rproj
+.Rproj.user/
+.Rproj.user/*
+
+# History files
 .Rhistory
+.Rapp.history
+
+# Session Data files
 .RData
+
+src/*.o
+src/*.so
+src/*.dll
+
 ^cran-comments.md*
+\.DS_Store
+
+# User-specific files
+.Ruserdata
+doc
+inst/doc
+
