@@ -5,11 +5,26 @@ The previous commit history of the package can be found [here](https://github.co
 The responsibilities and attention of Winston Chang are on things quite far away from extrafont and Rttf2pt1 these days. 
 As a consequence he asked for another person to maintain the extrafont package and I ([Frederic Bertrand](https://github.com/fbertran)) volunteered [(read here)](https://github.com/wch/Rttf2pt1/issues/25#issuecomment-3320579566).
 
-The following text is the original readme from Winston Chang repository on [github](https://github.com/wch/extrafont), only some links were updated.
+The following text almost exactly the original readme from Winston Chang repository on [github](https://github.com/wch/extrafont), only some links were updated and badges and doi added.
+
+**2025-09-24: extrafont is back to CRAN.**
 
 -------------------
 
 # extrafont
+
+<https://doi.org/10.32614/CRAN.package.extrafont>
+
+-------------------
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/fbertran/extrafont/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/fbertran/extrafont/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://img.shields.io/badge/doi-10.32614/CRAN.package.extrafont-blue.svg)](https://doi.org/10.32614/CRAN.package.extrafont)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html)
+[![CRAN status](https://www.r-pkg.org/badges/version/extrafont)](https://cran.r-project.org/package=extrafont)
+<!-- badges: end -->
+
+-------------------
 
 The extrafont package makes it easier to use fonts other than the basic PostScript fonts that R uses.
 Fonts that are imported into extrafont can be used with PDF or PostScript output files. On Windows, extrafont will also make system fonts available for bitmap output.

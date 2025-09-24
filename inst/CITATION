@@ -1,0 +1,23 @@
+citHeader(paste("To cite", meta$Package, "in publications use:"))
+
+titl <- meta$Title
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+vers <- paste("R package version", meta$Version)
+doi <- paste0("10.32614/CRAN.package.", meta$Package)
+urldoi <- paste0("https://doi.org/", doi)
+
+
+bibentry(bibtype="Manual",
+         title = titl,
+         author = c(person(given = "Winston",
+                      family = "Chang"),
+               person(given = "Frederic", family= "Bertrand")
+               ),
+   publisher = "manual",
+         year         = year,
+         note         = vers,
+         url          = "https://github.com/fbertran/extrafont",
+         textVersion =
+         paste("Winston Chang and Frederic Bertrand (",year ,"). ", titl, ", ",
+    vers, ". doi:", doi, ".", sep="")
+)
