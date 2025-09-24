@@ -1,6 +1,19 @@
 Package: extrafont
+Type: Package
 Title: Tools for Using Fonts
 Version: 0.20
+Date: 2025-09-24
+Depends:
+    R (>= 2.15)
+Imports:
+    extrafontdb,
+    grDevices,
+    utils,
+    Rttf2pt1
+Suggests:
+    fontcm,
+    testthat, 
+    withr (>= 2.5.0)
 Authors@R: c(
 	person(given = "Winston", family= "Chang", role = c("aut")),
 	person(given = "Frederic", family= "Bertrand", role = c("cre"), email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281"))
@@ -13,17 +26,11 @@ Description: Tools to using fonts other than the standard PostScript fonts.
     can also be used with fonts packaged specifically to be used with, such as
     the fontcm package, which has Computer Modern PostScript fonts with math
     symbols.
-Depends:
-    R (>= 2.15)
-Imports:
-    extrafontdb,
-    grDevices,
-    utils,
-    Rttf2pt1
-Suggests:
-    fontcm
 License: GPL-2
+LazyLoad: yes
+NeedsCompilation: no
 URL: https://github.com/fbertran/extrafont
 BugReports: https://github.com/fbertran/extrafont/issues
 RoxygenNote: 7.3.3
 Encoding: UTF-8
+Config/testthat/edition: 3
